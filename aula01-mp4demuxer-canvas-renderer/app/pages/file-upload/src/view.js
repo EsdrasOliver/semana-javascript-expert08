@@ -1,3 +1,5 @@
+//SERVE PARA MOSTRAR A VISUALIZACAO EM TELA
+
 export default class View {
     #fileUpload = document.getElementById('fileUpload')
     #btnUploadVideo = document.getElementById('btnUploadVideos')

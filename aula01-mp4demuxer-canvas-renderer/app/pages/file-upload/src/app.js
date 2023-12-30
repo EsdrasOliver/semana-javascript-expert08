@@ -15,6 +15,7 @@ worker.onmessage = ({ data }) => {
     view.updateElapsedTime(`Process took ${took.replace('ago', '')}`)
 }
 
+//O TOOK MOSTRA O TEMPO QUE DEMOROU PARA BAIXAR O ARQUIVO - O RESULTADO DISSO APARECE NA VIEW ABAIXO DO VIDEO
 let took = ''
 view.configureOnFileChange(file => {
     const canvas = view.getCanvas()
@@ -31,6 +32,7 @@ view.configureOnFileChange(file => {
     })
 })
 
+//SIMULA QUE ALGUEM SELECIONOU UM ARQUIVO
 async function fakeFetch() {
     const filePath = '/videos/frag_bunny.mp4'
     const response = await fetch(filePath)
